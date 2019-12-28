@@ -5,7 +5,7 @@ const app = express();
 
 var publicDirPath = path.join(__dirname, '../templates/views');
 var partialDirPath = path.join(__dirname, '../templates/partial');
-//set hanldebar engine and views location
+
 app.set('view engine', 'hbs');
 app.set('views',publicDirPath);
 hbs.registerPartials(partialDirPath);
